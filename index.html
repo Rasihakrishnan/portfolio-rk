@@ -7,10 +7,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/lucide-static@0.1.0/font/lucide.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="container">
+      <button class="menu-toggle" id="menu-toggle">
+        <i data-lucide="menu" id="menu-icon"></i>
+      </button>
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -19,11 +24,9 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
-      <button class="menu-toggle" id="menu-toggle">
-        <i data-lucide="menu"></i>
-      </button>
     </div>
   </nav>
+  
 
 <section id="home" class="hero">
   <div class="hero-background">
@@ -59,7 +62,7 @@
         <div class="about-text">
           <h2>About Me</h2>
           <p>
-            Hi, I'm <b>Rasiha</b>, a passionate Computer Science student at J J College of Engineering and Technology. 
+            Hi, I'm <b style="color: #ffffff;;">Rasiha</b>, a passionate Computer Science student at J J College of Engineering and Technology. 
             I am deeply interested in software development, machine learning, and innovative tech solutions 
             that can make a positive impact on the world.
           </p>
@@ -69,6 +72,9 @@
             wheelchair, which uses Raspberry Pi to help individuals with mobility challenges.
           </p>
         </div>
+        <a href="#" id="downloadBtn" class="btn-resume">
+          <i data-lucide="download" style="margin-right: 8px;"></i> Download Resume
+        </a>
       </div>
     </div>
   </section>
@@ -80,7 +86,6 @@
       </div>
     </div>
   </section>
-
 <section id="projects" class="projects">
   <div class="container">
     <h2 class="section-title">Featured Projects</h2>
@@ -186,8 +191,6 @@
     <a href="#home"><i data-lucide="arrow-up"></i></a>
   </div>
 </footer>
-
-  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
